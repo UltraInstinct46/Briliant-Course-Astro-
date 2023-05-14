@@ -1,0 +1,57 @@
+---
+import Layout from '../layouts/Layout_User.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Welcome to Astro.">
+	<video class="w-full" controls>
+		<source src="/introduction.mp4" type="video/mp4">
+		Your browser does not support the video tag.
+	  </video>
+	<div class="px-0 pt-10 sm:px-20">
+		<ul class="divide-y divide-gray-200 dark:divide-gray-700">
+			<li class="pb-3 sm:pb-4">
+			   <div class="flex items-center space-x-4">
+				  <div class="flex-1 min-w-0">
+					 <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
+						<a href="#">Introduction</a>
+					 </p>
+				  </div>
+				  <div class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
+					<svg class="w-6 h-6 dark:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+						<path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"></path>
+					</svg>		
+				  </div>
+			   </div>
+			</li>
+			<li class="py-3 sm:py-4">
+			   <div class="flex items-center space-x-4">
+				  <div class="flex-1 min-w-0">
+					 <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
+						<a href="#">2.Java 1</a>
+					 </p>
+				  </div>
+				  <div class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
+					<svg class="w-6 h-6 dark:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+						<path stroke-linecap="round" stroke-linejoin="round" d="M5.25 7.5A2.25 2.25 0 017.5 5.25h9a2.25 2.25 0 012.25 2.25v9a2.25 2.25 0 01-2.25 2.25h-9a2.25 2.25 0 01-2.25-2.25v-9z"></path>
+					</svg>
+				  </div>
+			   </div>
+			</li>
+			<li class="py-3 sm:py-4">
+			   <div class="flex items-center space-x-4">
+				  <div class="flex-1 min-w-0">
+					 <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
+						<a href="#">3. Java 2</a>
+					 </p>
+				  </div>
+				  <div class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
+					<svg class="w-6 h-6 dark:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+						<path stroke-linecap="round" stroke-linejoin="round" d="M5.25 7.5A2.25 2.25 0 017.5 5.25h9a2.25 2.25 0 012.25 2.25v9a2.25 2.25 0 01-2.25 2.25h-9a2.25 2.25 0 01-2.25-2.25v-9z"></path>
+					</svg>
+				  </div>
+			   </div>
+			</li>
+		 </ul>
+	</div>
+</Layout>

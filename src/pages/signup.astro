@@ -1,0 +1,39 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+---
+
+<Layout title="Welcome to Astro.">
+    <main class="bg-white max-w-lg mx-auto p-8 md:p-12 my-10 rounded-lg shadow-2xl">
+        <section>
+            <h3 class="font-bold text-2xl text-center">Welcome!</h3>
+            <h3 class="font-bold text-2xl text-center">Signup to Continue!</h3>
+        </section>
+
+        <section class="mt-10">
+            <form class="flex flex-col" method="POST" action="#">
+                <button
+    class="px-4 py-2 border flex gap-2 border-slate-200 rounded-lg text-slate-700 hover:border-slate-400 hover:text-slate-900 hover:shadow transition duration-150">
+    <img class="w-6 h-6" src="https://www.svgrepo.com/show/475656/google-color.svg" loading="lazy" alt="google logo">
+    <span class="px-10">Login with Google</span>
+</button>
+<p class="text-center mt-4 text-gray-600 text-1xl">or</p>
+<button
+    class="mt-4 px-4 py-2 border flex gap-2 border-slate-200 rounded-lg text-slate-700 hover:border-slate-400 hover:text-slate-900 hover:shadow transition duration-150" formaction="register.html">
+    <div class="w-6 h-6 bg-transparent"></div>
+    <span class="px-10 text-center">Signup with Email</span>
+</button>
+
+<p class="text-center mt-4 text-gray-600 text-1xl">By signing up you are agreed with our friendly terms and condition.</p>
+<p class="text-center mt-10 text-gray-600 text-2xl">Already have an account?</p>
+<button class="mt-4 bg-transparent hover text-blue-600 font-bold py-2 rounded shadow-lg hover:shadow-xl transition duration-200" formaction="login.html">Signin</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="max-w-lg mx-auto flex justify-center text-white">
+        <a href="#" class="hover:underline">Contact</a>
+        <span class="mx-3">•</span>
+        <a href="#" class="hover:underline">Privacy</a>
+    </footer>
+</Layout>
