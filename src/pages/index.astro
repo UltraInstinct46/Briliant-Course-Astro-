@@ -4,8 +4,8 @@ import Footer from '../components/Footer.astro';
 ---
 
 <Layout title="Welcome to Astro.">
-	<div class="px-20 pt-10">
-    <h1 class="text-3xl underline py-10">Popular Category Our in Platform</h1>
+	<div class="px-5 pt-10 md:px-20">
+    <h1 class="text-3xl py-10 font-bold">Popular Category Our in Platform</h1>
 	<div id="default-carousel" class="relative w-full" data-carousel="static">
 		<!-- Carousel wrapper -->
 		<div class="relative h-56 overflow-hidden rounded-lg md:h-96">
@@ -37,7 +37,7 @@ import Footer from '../components/Footer.astro';
 			</span>
 		</button>
 	</div>
-		<h1 class="text-3xl underline pt-10 py-10">Continue to watch Previous Class</h1>
+		<h1 class="text-3xl pt-10 py-10 font-bold">Continue to watch Previous Class</h1>
 		<div class="grid grid-cols-1 gap-4 md:grid-cols-4">
 			<a href="video.html" class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
 				<img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg" src="/java.png" alt="">
@@ -71,3 +71,9 @@ import Footer from '../components/Footer.astro';
 	</div>
 	<Footer></Footer>
 </Layout>
+
+<style>
+	body{
+		background-color: white;
+	}
+</style>
